@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Login & Get IP</title>
+    
+    <!-- Google Identity Services SDK -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <h1>Google Login & Get IP</h1>
+
+    <!-- Nút Đăng nhập Google -->
+    <div id="g_id_onload"
+         data-client_id="384240863380-roldfg0msng0beup02rtg1jr0jek5f3b.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse">
+    </div>
+    
+    <div class="g_id_signin" data-type="standard"></div>
+
+    <!-- Vùng hiển thị thông tin người dùng và địa chỉ IP -->
+    <p id="user-info"></p>
+    <p id="user-ip"></p>
+
+    <!-- Thư viện jwt-decode và file auth.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jwt-decode/3.1.2/jwt-decode.min.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

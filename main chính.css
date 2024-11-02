@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e3d2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    background-size: cover;
+    height: 100vh;
+}
+
+.grid-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột */
+    gap: 20px;
+    max-width: 70%;
+    padding: 20px;
+    color: #fff;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 120px;
+}
+/* Hiệu ứng hover khi rê chuột vào */
+.app-icon:hover {
+    transform: scale(1.1); /* Phóng to toàn bộ icon */
+    border-radius: 10px; /* Bo tròn góc */
+}
+
+.app-icon:hover img {
+    transform: scale(1.2); /* Phóng to icon */
+}
+
+.app-icon:hover p {
+    color: #FF0000; /* Đổi màu chữ khi rê chuột */
+}
+.grid-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.grid-item:hover {
+    background-color: #fff;
+    cursor: pointer;
+}
+.news-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 450px;
+    margin-bottom: auto;
+}
+
+.news-section h2 {
+    font-size: 24px;
+    color: #2d64af;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+
+}
+
+.news-item h3 {
+    font-size: 18px;
+    color: #ff4500;
+    margin-bottom: auto;
+    margin-top: 1;
+    line-height: 1;
+
+}
+
+.news-item p {
+    font-size: 14px;
+    color: #d32f2f;
+
+}
+
+footer {
+    color: black;
+    padding: 10px;
+    text-align: center; /* Thêm dòng này để căn giữa chữ */
+    position: fixed;    /* Để footer luôn ở dưới cùng của trang */
+    width: 100%;
+    bottom: 0;
+}
